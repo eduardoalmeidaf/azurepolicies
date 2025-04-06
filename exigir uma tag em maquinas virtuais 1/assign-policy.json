@@ -1,0 +1,18 @@
+{
+  "properties": {
+    "displayName": "Exemplo de Atribuição de Política",
+    "description": "Atribuição de política para garantir conformidade com padrões específicos.",
+    "policyDefinitionId": "/subscriptions/<subscription-id>/providers/Microsoft.Authorization/policyDefinitions/<policy-definition-name>",
+    "scope": "/subscriptions/<subscription-id>",
+    "notScopes": [
+      "/subscriptions/<subscription-id>/resourceGroups/<excluded-resource-group>"
+    ],
+    "parameters": "@parameters.json",  // Link para o arquivo de parâmetros
+    "metadata": {
+      "assignedBy": "Seu Nome ou Automação"
+    }
+  },
+  "identity": {
+    "type": "SystemAssigned"
+  }
+}
